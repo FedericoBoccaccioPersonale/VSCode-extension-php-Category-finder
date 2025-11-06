@@ -1,0 +1,17 @@
+{
+    "panel.title": "@category Finder",
+    "tab.all_functions": "All functions",
+    "tab.all_categories": "All categories",
+    "filter.by_name_or_cat": "Filter by name or category...",
+    "filter.by_cat_name": "Filter by category name...",
+    "filter.by_func_name": "Filter by function name...",
+    "sort.by": "Sort by:",
+    "sort.line": "Line",
+    "sort.name": "Name",
+    "counter.displayed": "Displayed",
+    "counter.of": "of",
+    "counter.elements": "items",
+    "counter.categories": "categories",
+    "no_category": "Uncategorized",
+    "current_file": "Current File"
+}

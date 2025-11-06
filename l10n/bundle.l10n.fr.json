@@ -1,0 +1,6 @@
+{
+    "extension.displayName": "Chercheur de Catégories",
+    "extension.description": "Trouve des fonctions par @category dans le fichier actif.",
+    "command.title": "Chercher @category",
+    "view.container.title": "Chercheur de Catégories"
+}

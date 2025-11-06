@@ -1,0 +1,17 @@
+{
+    "panel.title": "Chercheur @category",
+    "tab.all_functions": "Toutes les fonctions",
+    "tab.all_categories": "Toutes les catégories",
+    "filter.by_name_or_cat": "Filtrer par nom ou catégorie...",
+    "filter.by_cat_name": "Filtrer par nom de catégorie...",
+    "filter.by_func_name": "Filtrer par nom de fonction...",
+    "sort.by": "Trier par:",
+    "sort.line": "Ligne",
+    "sort.name": "Nom",
+    "counter.displayed": "Affichés",
+    "counter.of": "de",
+    "counter.elements": "éléments",
+    "counter.categories": "catégories",
+    "no_category": "Sans catégorie",
+    "current_file": "Fichier actuel"
+}

@@ -1,0 +1,1 @@
+code . --disable-extensions

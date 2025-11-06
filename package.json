@@ -1,0 +1,33 @@
+{
+  "name": "category-finder",
+  "displayName": "%extension.displayName%",
+  "description": "%extension.description%",
+  "version": "1000000.0.0",
+  "publisher": "TUO_NOME",
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onCommand:category-finder.showPanel"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "category-finder.showPanel",
+        "title": "%command.title%"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "when": "resourceLangId",
+          "command": "category-finder.showPanel",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "l10n": "./l10n"
+}

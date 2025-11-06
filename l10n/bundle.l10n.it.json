@@ -1,0 +1,6 @@
+{
+    "extension.displayName": "Ricerca Categorie",
+    "extension.description": "Trova funzioni per @category nel file attivo.",
+    "command.title": "Cerca @category",
+    "view.container.title": "Ricerca Categorie"
+}
