@@ -1,0 +1,216 @@
+body
+{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	color: var(--vscode-editor-foreground);
+	background-color: var(--colore-sfondo, var(--vscode-editor-background)); /* Così immette colore-sfondo, e in sua assenza il predefinito del tema */
+}
+
+.tabs
+{
+	display: flex;
+	border-bottom: 1px solid var(--vscode-divider-background);
+	position: sticky;
+	top: 0;
+	background-color: var(--colore-sfondo, var(--vscode-editor-background));
+	z-index: 20;
+}
+
+.tab-button
+{
+	padding: 10px 15px;
+	cursor: pointer;
+	background: none;
+	border: none;
+	color: var(--vscode-editor-foreground);
+	font-size: 1em;
+	border-bottom: 2px solid transparent;
+}
+
+.tab-button.active
+{
+	border-bottom-color: var(--vscode-tab-activeBorder);
+	font-weight: bold;
+}
+
+.tab-content
+{
+	display: none;
+}
+
+.tab-content.active
+{
+	display: block;
+}
+
+.content-area
+{
+	padding: 0;
+}
+
+.sticky-header
+{
+	position: sticky;
+	top: 37px; /* Non ho assolutamente idea del perchè ma questo sembra essere il valore corretto */
+	background-color: var(--colore-sfondo, var(--vscode-editor-background));
+	padding-bottom: 10px;
+	z-index: 10;
+}
+
+input[type="text"]
+{
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+	background-color: var(--colore-sfondo-input, var(--vscode-input-background));
+	color: var(--vscode-input-foreground);
+	border: 1px solid var(--vscode-input-border);
+	margin-bottom: 8px;
+}
+
+ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.list-item
+{
+	padding: 5px;
+	border-radius: 3px;
+	cursor: pointer;
+	display: flex;
+	align-items: baseline; /* Risolve il problema che in alcuni casi il nome funzione venga fastidiosamente scritto 1px più in basso, credo succedesse quando ci sono troppe voci e sono necessarie le barre di scorrimento. */
+	border-bottom: 1px solid var(--vscode-divider-background);
+}
+
+.list-item:hover
+{
+	background-color: var(--vscode-list-hoverBackground);
+}
+
+b
+{
+	color: var(--vscode-editor-selectionBackground);
+}
+
+b.commented-function
+{
+	color: #6A9955;
+}
+
+.line-number
+{
+	color: var(--vscode-descriptionForeground);
+	min-width: 40px;
+	font-size: 0.9em;
+	text-align: right;
+	padding-right: 3px;
+}
+
+.category
+{
+	font-style: italic;
+	font-size: 0.9em;
+	padding: 2px 5px;
+	margin-left: 5px;
+	border-radius: 3px;
+	white-space: nowrap;
+}
+
+.parent-category
+{
+	background-color: var(--vscode-list-focusBackground);
+	color: var(--vscode-list-focusForeground);
+}
+
+.other-category
+{
+	background-color: var(--vscode-editor-inactiveSelectionBackground);
+	color: var(--vscode-editor-foreground);
+	opacity: 0.7;
+}
+
+.counters
+{
+	font-size: 0.9em;
+	color: var(--vscode-descriptionForeground);
+	margin-top: 10px;
+}
+
+/* I pulsanti di ordinamento */
+.sort-controls
+{
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.sort-controls span
+{
+	margin-right: 10px;
+	white-space: nowrap;
+}
+
+.sort-controls button
+{
+	margin-right: 10px;
+	background: var(--vscode-button-secondaryBackground);
+	color: var(--vscode-button-secondaryForeground);
+	border: 1px solid var(--vscode-button-border);
+	padding: 5px 10px;
+	cursor: pointer;
+	flex-shrink: 0;
+}
+
+/* span che contiene i nomi delle classi */
+.function-scope
+{
+	color: #6a99d3; /* Blu più scuro */
+}
+
+.sort-controls button:hover
+{
+	background: var(--vscode-button-secondaryHoverBackground);
+}
+
+.category-group
+{
+	margin-bottom: 1em;
+}
+
+.category-title
+{
+	font-size: 1.1em;
+	font-weight: bold;
+	padding-bottom: 5px;
+	border-bottom: 1px solid var(--vscode-divider-background);
+}
+
+.category-title small
+{
+	font-size: 0.9em;
+	font-weight: normal;
+	color: var(--vscode-descriptionForeground);
+}
+
+.fileSelector
+{
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+	background-color: var(--colore-sfondo-input, var(--vscode-input-background));
+	color: var(--vscode-input-foreground);
+	border: 1px solid var(--vscode-input-border);
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.fileSelector option.active-file
+{
+	background-color: var(--vscode-list-activeSelectionBackground);
+	color: wheat;
+}

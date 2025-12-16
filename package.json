@@ -1,33 +1,112 @@
 {
-  "name": "category-finder",
-  "displayName": "%extension.displayName%",
-  "description": "%extension.description%",
-  "version": "1000000.0.0",
-  "publisher": "TUO_NOME",
-  "icon": "images/icon.png",
-  "engines": {
-    "vscode": "^1.80.0"
-  },
-  "main": "./extension.js",
-  "activationEvents": [
-    "onCommand:category-finder.showPanel"
-  ],
-  "contributes": {
-    "commands": [
-      {
-        "command": "category-finder.showPanel",
-        "title": "%command.title%"
-      }
-    ],
-    "menus": {
-      "editor/title": [
-        {
-          "when": "resourceLangId",
-          "command": "category-finder.showPanel",
-          "group": "navigation"
-        }
-      ]
-    }
-  },
-  "l10n": "./l10n"
+	"name": "category-finder",
+	"displayName": "%extension.displayName%",
+    "description": "%extension.description%",
+	"homepage": "https://federicoboccaccio.wordpress.com",
+	"repository":
+	{
+		"type": "git",
+		"url": "https://github.com/FedericoBoccaccioPersonale/VSCode-extension-php-Category-finder.git"
+	},
+	"categories":
+	[
+		"Programming Languages",
+		"Other"
+	],
+	"keywords":
+	[
+		"php",
+		"phpdoc",
+		"category","package","subpackage",
+		"outline",
+		"navigation",
+		"structure",
+		"symbols"
+	],
+	"version": "1000003.0.0",
+	"publisher": "FedericoBoccaccio",
+	"icon": "images/icon.png",
+	"engines": {"vscode": "^1.80.0"},
+	"main": "./extension.js",
+	
+	"contributes":
+	{
+		"viewsContainers":
+		{
+			"activitybar":
+			[
+				{
+					"id": "category-finder-container",
+					"title": "%view.container.title%",
+					"icon": "images/icon.png"
+				}
+			]
+		},
+		"views":
+		{
+			"category-finder-container":
+			[
+				{
+					"id": "category-finder-view",
+					"name": "%view.container.title%",
+					"type": "webview"
+				}
+			]
+		},
+		"commands":
+		[
+			{
+				"command": "category-finder-view.focus",
+				"title": "%command.focus.title%"
+			}
+		],
+		"configuration":
+		{
+			"title": "Category Finder 🔎",
+			"properties":
+			{
+				"categoryFinder.backgroundColor":
+				{
+					"type": "string",
+					"format": "color",
+					"default": "#fafaff",
+					"description": "%settings.backgroundColor.description%"
+				},
+				"categoryFinder.inputBackgroundColor":
+				{
+					"type": "string",
+					"format": "color",
+					"default": "#f6feff",
+					"description": "%settings.inputBackgroundColor.description%"
+				},
+				"gestioneFunzioni.mostraCommentate":
+				{
+					"type": "boolean",
+					"default": true,
+					"description": "%settings.showCommented.description%"
+				},
+				"gestioneFunzioni.mostraNomiEstesi":
+				{
+					"type": "boolean",
+					"default": true,
+					"description": "%settings.showExtendedNames.description%"
+				},
+				"gestioneFunzioni.mostraSelettoreFile":
+				{
+					"type": "boolean",
+					"default": true,
+					"description": "%settings.showFileSelector.description%"
+				}
+			}
+		}
+	},
+	"dependencies":
+	{
+		"php-parser": "^3.2.5"
+	},
+	"devDependencies":
+	{
+		"@vscode/vsce": "^3.7.1",
+		"playwright": "^1.57.0"
+	}
 }

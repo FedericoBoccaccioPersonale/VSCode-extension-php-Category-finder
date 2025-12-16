@@ -1,0 +1,28 @@
+# File di sistema e di git
+.vscode/
+.git/
+.github/
+.gitignore
+
+# File di sviluppo e script di debug
+*.cmd
+progetto_completo.txt
+package-lock.json
+webview/lente originale.gif
+
+# Cartelle di documentazione non essenziali per l'esecuzione
+esempi/
+doc/
+# Se vuoi mantenere la doc, rimuovi la riga qui sopra. Ma solitamente basta il README.md che è incluso di default.
+images/*.pdn
+
+# Proposti per eliminazione
+l10n/
+
+# File temporanei o di build precedenti
+*.vsix
+*.zip
+*.log
+
+# ATTENZIONE: NON AGGIUNGERE node_modules/ QUI
+# Deve essere incluso perché contiene la libreria php-parser

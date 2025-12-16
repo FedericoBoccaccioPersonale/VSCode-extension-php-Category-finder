@@ -1,0 +1,13 @@
+{
+	"extension.displayName": "Ricerca Categorie",
+	"extension.description": "Trova funzioni per @category nel file attivo.",
+	"command.title": "Cerca @category",
+	"view.container.title": "Category Finder 🇮🇹",
+	"view.title": "Cerca per Categoria",
+	"command.focus.title": "Focus su Cerca per Categoria",
+	"settings.backgroundColor.description": "Colore di sfondo personalizzato per il pannello. Se lasciato vuoto, usa il colore del tema di VS Code.",
+	"settings.inputBackgroundColor.description": "Colore di sfondo personalizzato per i campi di input. Se lasciato vuoto, usa il colore del tema di VS Code.",
+	"settings.showCommented.description": "Mostra anche le funzioni commentate, in colore diverso, altrimenti vengono nascoste.",
+	"settings.showExtendedNames.description": "Se vero, mostra i nomi delle funzioni con la loro gerarchia (es. Classe.funzione).",
+	"settings.showFileSelector.description": "Se vero, permetterà di scegliere di mostrare le funzioni di un file specifico tra quelli aperti, altrimenti solo di quello corrente."
+}

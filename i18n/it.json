@@ -1,0 +1,22 @@
+{
+	"webview.title": "Category Finder",
+	"tabs.all_functions": "Tutte le funzioni",
+	"tabs.by_category": "Per categoria",
+	"functions.search_placeholder": "Filtra per nome o categoria...",
+	"common.sort_by": "Ordina per:",
+	"common.line": "Linea",
+	"common.name": "Nome",
+	"common.full_name": "Nome completo",
+	"functions.counter": "Visualizzate {0} di {1} funzioni",
+	"common.loading": "File in analisi...",
+	"categories.category_search_placeholder": "Filtra per nome categoria...",
+	"categories.function_search_placeholder": "Filtra per nome funzione...",
+	"categories.counter": "Visualizzate {0} di {1} categorie",
+	"extension.open_file_prompt": "Apri un file o selezionalo dalla lista per visualizzare le funzioni.",
+	"extension.no_active_document": "Nessun documento attivo.",
+	"extension.comment_scope": "Commento",
+	"extension.current_file": "File corrente",
+	"extension.uncategorized": "Senza categoria",
+	"categories.function_counter_in_group": "({0} di {1})",
+	"common.language_code_langHtml": "it"
+}

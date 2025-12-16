@@ -1,0 +1,13 @@
+{
+	"extension.displayName": "Category Finder",
+	"extension.description": "Finds functions by @category in the active file.",
+	"command.title": "Search @category",
+	"view.container.title": "Category Finder 🌎",
+	"view.title": "Category Finder",
+	"command.focus.title": "Focus on Category Finder View",
+	"settings.backgroundColor.description": "Custom background color for the panel. If left empty, it uses the VS Code theme color.",
+	"settings.inputBackgroundColor.description": "Custom background color for input fields. If left empty, it uses the VS Code theme color.",
+	"settings.showCommented.description": "Show commented functions in a different color, otherwise they are hidden.",
+	"settings.showExtendedNames.description": "If true, shows function names with their full hierarchy (e.g., Class.function).",
+	"settings.showFileSelector.description": "If true, allows choosing to display functions from a specific open file, otherwise only from the current one."
+}

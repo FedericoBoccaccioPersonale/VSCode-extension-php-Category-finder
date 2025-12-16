@@ -1,0 +1,22 @@
+{
+	"webview.title": "Category Finder",
+	"tabs.all_functions": "Toutes les fonctions",
+	"tabs.by_category": "Par catégorie",
+	"functions.search_placeholder": "Filtrer par nom ou catégorie...",
+	"common.sort_by": "Trier par :",
+	"common.line": "Ligne",
+	"common.name": "Nom",
+	"common.full_name": "Nom complet",
+	"functions.counter": "Affichage de {0} sur {1} fonctions",
+	"common.loading": "Analyse du fichier...",
+	"categories.category_search_placeholder": "Filtrer par nom de catégorie...",
+	"categories.function_search_placeholder": "Filtrer par nom de fonction...",
+	"categories.counter": "Affichage de {0} sur {1} catégories",
+	"extension.open_file_prompt": "Ouvrez un fichier ou sélectionnez-en un dans la liste pour voir ses fonctions.",
+	"extension.no_active_document": "Aucun document actif.",
+	"extension.comment_scope": "Commentaire",
+	"extension.current_file": "Fichier actuel",
+	"extension.uncategorized": "Sans catégorie",
+	"categories.function_counter_in_group": "({0} sur {1})",
+	"common.language_code_langHtml": "fr"
+}

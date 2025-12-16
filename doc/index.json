@@ -1,0 +1,39 @@
+{
+	"Documentazione":
+	{
+		"it": "documentazione.it.md",
+		"en": "documentation.en.md",
+		"fr": "documentation.fr.md"
+	},
+	"Funzionalità previste":
+	{
+		"it": "funzionalità previste.it.md",
+		"en": "planned features.en.md",
+		"fr": "fonctionnalités prévues.fr.md"
+	},
+	"Stramberie delle estensioni":
+	{
+		"it": "stramberie delle estensioni.it.md",
+		"en": "extension quirks.en.md",
+		"fr": "bizarreries de l'extension.fr.md"
+	}
+	,
+	"Bug VSC":
+	{
+		"it": "bug di vscode.it.md",
+		"en": "vscode bugs.en.md",
+		"fr": "bugs vscode.fr.md"
+	},
+	"Bug GitHub":
+	{
+		"it": "bug di git.it.md",
+		"en": "git bugs.en.md",
+		"fr": "bugs git.fr.md"
+	},
+	"Bug Win":
+	{
+		"it": "bug di windows.it.md",
+		"en": "windows bugs.en.md",
+		"fr": "bugs windows.fr.md"
+	}
+}

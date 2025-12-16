@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="${l10n['common.language_code_langHtml']}">
+<!-- Anche l' attributo lang del tag html, per quanto inutile, viene impostato -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>${l10n['webview.title']}</title>
+		<link href="${styleUri}" rel="stylesheet" />
+		${customStyles}
+	</head>
+	<body>
+		<div class="tabs">
+			<button class="tab-button ${functionsTabActive}" onclick="openTab(event, 'functions')">${l10n['tabs.all_functions']}</button>
+			<button class="tab-button ${categoriesTabActive}" onclick="openTab(event, 'categories')">${l10n['tabs.by_category']}</button>
+		</div>
+		<div id="functions" class="tab-content ${functionsTabActive}">
+			<div class="content-area">
+				<div class="sticky-header">
+					${fileSelector}
+					<input type="text" id="searchFunctions" placeholder="${l10n['functions.search_placeholder']}">
+					<div class="sort-controls">
+						<span>${l10n['common.sort_by']}</span>
+						<button onclick="sort('line')">${l10n['common.line']}</button>
+						<button onclick="sort('name')">${l10n['common.name']}</button>
+						<button onclick="sort('fullname')">${l10n['common.full_name']}</button>
+					</div>
+					<div class="counters">${functionsCounterText}</div>
+				</div>
+				<div class="loading-indicator" style="display: none;">${l10n['common.loading']}</div>
+				<ul id="functionsList">${allFunctionsHtml}</ul>
+			</div>
+		</div>
+		<div id="categories" class="tab-content ${categoriesTabActive}">
+			<div class="content-area">
+				<div class="sticky-header">
+					${fileSelector}
+					<input type="text" id="searchByCategory" placeholder="${l10n['categories.category_search_placeholder']}">
+					<input type="text" id="searchByCategoryFunction" placeholder="${l10n['categories.function_search_placeholder']}">
+					<div class="sort-controls">
+						<span>${l10n['common.sort_by']}</span>
+						<button onclick="sort('line')">${l10n['common.line']}</button>
+						<button onclick="sort('name')">${l10n['common.name']}</button>
+						<button onclick="sort('fullname')">${l10n['common.full_name']}</button>
+					</div>
+					<div class="counters">${categoriesCounterText}</div>
+				</div>
+				<div class="loading-indicator" style="display: none;">${l10n['common.loading']}</div>
+				<div id="categoriesList">${allCategoriesHtml}</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		const l10n = ${l10nJson};
+	</script>
+	<script src="${scriptUri}"></script>
+</html>

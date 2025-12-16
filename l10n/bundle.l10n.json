@@ -1,6 +1,6 @@
 {
-    "extension.displayName": "Category Finder",
-    "extension.description": "Finds functions by @category in the active file.",
-    "command.title": "Search @category",
-    "view.container.title": "Category Finder"
+	"extension.displayName": "Category Finder",
+	"extension.description": "Finds functions by @category in the active file.",
+	"command.title": "Search @category",
+	"view.container.title": "Category Finder"
 }
