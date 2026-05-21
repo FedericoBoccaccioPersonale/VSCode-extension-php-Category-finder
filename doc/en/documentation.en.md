@@ -218,7 +218,7 @@ isInComment: isCommented
 
 This is all very wonderful in theory, but it is not what is implemented in the parseFunctions function, which I have given up trying to understand.
 
-Unfortunately the parser is **bugged** and does not correctly interpret the comments.
+Unfortunately the parser is **bugged** and does not correctly interpret the comments. I created an [issue](https://github.com/glayzzle/php-parser/issues/1169#event-25724448614), but it turned out to be useless.
 
 ### See also
 [Extension quirks](extension%20quirks.en.md).

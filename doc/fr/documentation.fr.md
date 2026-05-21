@@ -218,7 +218,7 @@ isInComment: isCommented
 
 Tout cela est très merveilleux en théorie, mais ce n'est pas ce qui est implémenté dans la fonction parseFunctions, que j'ai renoncé à essayer de comprendre.
 
-Malheureusement, le parseur est **bogué** et n'interprète pas correctement les commentaires.
+Malheureusement, le parseur est **bogué** et n'interprète pas correctement les commentaires. J'ai créé un [issue](https://github.com/glayzzle/php-parser/issues/1169#event-25724448614), mais cela s'est avéré inutile.
 
 ### Lisez aussi
 [Bizarreries des extensions](bizarreries%20de%20l'extension.fr.md).
